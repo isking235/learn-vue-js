@@ -1,10 +1,11 @@
 <template>
   <dv>
-    {{str}}
+    <app-header></app-header>
   </dv>
 </template>
 
 <script>
+import AppHeader from './components/AppHeader.vue';
 // new Vue({
 //   data:{
 
@@ -15,6 +16,9 @@ export default {
     return {
       str:'hi'
     }
+  },
+  components:{
+    'app-header' : AppHeader
   }
 }
 </script>
